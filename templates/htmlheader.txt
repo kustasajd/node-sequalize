@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title></title>
+        <style>
+        @import url('https://fonts.googleapis.com/css?family=Roboto')
+        @font-face {
+          font-family: 'Roboto';
+          font-weight: normal;
+          src: url({./Roboto-Regular.ttf @encoding=dataURI});
+          format('ttf');
+        }
+        body {
+          font-family: Roboto;
+        }
+        .p-2 {
+          padding: 8px;
+        }
+        .flex {
+          display: flex;
+        }
+        .items-center {
+          align-items: center;
+        } 
+        .justify-between {
+          justify-content: center;
+        }
+        .text-lg {
+          font-size: 18px;
+        } 
+        .font-semibold {
+          font-weight: 600;
+        }
+        .text-gray-700 {
+          color: #374151;
+        }
+        .rounded {
+          border-radius: 0.25rem;
+        } 
+        .bg-white {
+          background-color: #FFFFFF;
+        } 
+        .overflow-hidden {
+          overflow: hidden;
+        } 
+        .shadow-lg {
+          box-shadow: 0 10px 15px -3px rgb(0 0 0 / 10%), 0 4px 6px -2px rgb(0 0 0 / 5%);
+        } 
+        .mt-2 {
+          margin-top: 8px;
+        } 
+        .px-2 {
+          padding-left: 0.5rem;
+          padding-right: 0.5rem;
+        }
+        .text-gray-900 {
+          color: #111827;
+        } 
+        .text-sm {
+          font-size: 0.875rem;
+          line-height: 1.25rem;
+        } 
+        .mb-2 {
+          margin-bottom: 0.5rem;
+        }
+        .block {
+          display: block;
+        } 
+        .w-24 {
+          width: 6rem;
+        } 
+        .h-12 {
+          height: 3rem;
+        } 
+        .border {
+          border-width: 1px solid #e2e8f0;
+        } 
+        .object-centain {
+          object-fit: contain;
+        } 
+        .mb-4 {
+          margin-bottom: 1rem;
+        }
+        .w-full {
+          width: 100%;
+        } 
+        .h-full {
+          height: 100%;
+        }
+        object-contain {
+          object-fit: contain;
+        }
+        .text-base {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        } 
+        .mb-1 {
+          margin-bottom: 0.25rem;
+        } 
+        .font-medium {
+          font-weight: 500;
+        }
+        .-mx-2 {
+          margin-left: -0.5rem;
+          margin-right: -0.5rem;
+        } 
+        .-my-3 {
+          margin-top: -0.75rem;
+          margin-bottom: -0.75rem;
+        }
+        .overflow-x-auto {
+          overflow-x: auto;
+        }
+        .inline-block {
+          display: inline-block;
+        } 
+        .min-w-full {
+          min-width: 100%;
+        } 
+        .shadow {
+          box-shadow: 0 1px 3px 0 rgb(0 0 0 / 10%), 0 1px 2px 0 rgb(0 0 0 / 6%);
+        } 
+        .rounded-lg {
+          border-radius: 0.5rem;
+        }
+        .px-5 {
+          padding-left: 1.25rem;
+          padding-right: 1.25rem;
+        }
+        .py-3 {
+          padding-top: 0.75rem;
+          padding-bottom: 0.75rem;
+        }
+        .border-b-2 {
+          border-bottom-width: 2px;
+        }
+        .border-gray-200 {
+          border-color: #E5E7EB;
+        }
+        .bg-gray-100 {
+          background-color: #F3F4F6;
+        }
+        .text-left {
+          text-align: left;
+        }
+        .text-xs {
+          font-size: 0.75rem;
+          line-height: 1rem;
+        }
+        .text-gray-600 {
+          color: #4B5563;
+        }
+        .uppercase {
+          text-transform: uppercase;
+        }
+        .tracking-wider {
+          letter-spacing: 0.05em;
+        }
+        .py-5 {
+          padding-top: 1.25rem;
+          padding-bottom: 1.25rem;
+        }
+        .border-b {
+          border-bottom: 1px solid;
+        }
+        .bg-orange-300 {
+          background-color: #fbd38d;
+        }
+
+        
+        </style>
+    </head>
+    <body>

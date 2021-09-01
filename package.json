@@ -1,0 +1,59 @@
+{
+  "name": "akara-api",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon server.js",
+    "test": "jest --watchAll --verbose --coverage"
+  },
+  "author": "Proxi Studios Pty Ltd",
+  "license": "UNLICENSED",
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  },
+  "dependencies": {
+    "@azure/storage-blob": "^12.5.0",
+    "bcrypt": "^5.0.0",
+    "body-parser": "^1.19.0",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "csurf": "^1.10.0",
+    "docusign-click": "^1.0.0",
+    "docusign-esign": "^5.10.0",
+    "docusign-monitor": "^1.0.0-beta",
+    "docusign-rooms": "^1.1.0",
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "fs": "0.0.1-security",
+    "html-pdf": "^2.2.0",
+    "express-flash": "0.0.2",
+    "express-session": "^1.16.2",
+    "fs-extra": "^6.0.1",
+    "helmet": "^3.18.0",
+    "jest": "^26.6.3",
+    "jsonwebtoken": "^8.5.1",
+    "memorystore": "^1.6.1",
+    "moment": "^2.24.0",
+    "mssql": "^6.3.1",
+    "node-zip": "^1.1.1",
+    "progress-stream": "^2.0.0",
+    "stream-to-array": "^2.3.0",
+    "node-blob": "0.0.2",
+    "node-fetch": "^2.6.1",
+    "passport": "^0.4.0",
+    "passport-docusign": "^1.1.0",
+    "path": "^0.12.7",
+    "sequelize": "^6.5.0",
+    "stream": "0.0.2",
+    "supertest": "^6.1.3",
+    "validator": "^10.11.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^1.19.1"
+  }
+}

@@ -1,0 +1,21 @@
+const express = require('express')
+const router = express.Router()
+const invoiceController = require('../controllers/invoiceController')
+const auth = require('../helper/auth.controller')
+const logsApi = require('../helper/logsApi.controller')
+
+router.get('/invoiceStatusTypes', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.getAllInvoiceStatusTypes, logsApi.endlogsApi)
+router.get('/all/:siteId', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.getSiteInvoices, logsApi.endlogsApi)
+router.post('/filter', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.getFilterdInvoices, logsApi.endlogsApi)
+router.post('/create', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.create, logsApi.endlogsApi)
+router.delete('/deleteInvoice/:invoiceId', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.deleteInvoice, logsApi.endlogsApi)
+router.get('/:invoiceId', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.getInvoiceDetail, logsApi.endlogsApi)
+router.post('/generate', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.generate, logsApi.endlogsApi)
+router.get('/outstandingClients/:siteId', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.getOutstandingClients, logsApi.endlogsApi)
+router.get('/:siteId/generate/:clientId', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.getOutStandings, logsApi.endlogsApi)
+router.post('/exportPdf', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.exportPdf, logsApi.endlogsApi)
+router.post('/exportPdfs', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.exportPdfs, logsApi.endlogsApi)
+router.post('/downloadPdf', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.downloadPdf, logsApi.endlogsApi)
+router.get('/:siteId/getByClient/:clientId', logsApi.startlogsApi, auth.authenticateJWT, invoiceController.getInvoicesbyClient, logsApi.endlogsApi)
+
+module.exports = router
